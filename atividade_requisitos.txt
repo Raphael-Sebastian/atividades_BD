@@ -1,0 +1,19 @@
+Atividade: Pesquisa de Requisitos para SGBDs Relacionais
+Objetivo: Investigar e comparar os requisitos de hardware e software necessários para instalação local das versões mais recentes (estáveis) do MySQL e PostgreSQL.
+
+Tabela Comparativa – Requisitos para Instalação On-Premises
+
+Requisito                     | MySQL (mínimo)          | MySQL (recomendado)      | PostgreSQL (mínimo)          | PostgreSQL (recomendado)      
+-----------------------------|--------------------------|---------------------------|-------------------------------|-------------------------------
+CPU (núcleos / arquitetura)  | 2 núcleos, x86-64        | ≥ 4 núcleos, x86-64       | 1 núcleo, x86-64 ou ARM       | 2+ núcleos, 64-bit x86/ARM    
+RAM                          | 2 GB                     | ≥ 8 GB                    | ~1 GB                         | ≥ 2 GB (ou mais conforme uso) 
+Espaço em disco              | ~1 GB + dados            | ≥ 10 GB + RAID10          | ~ Mínimo para sistema básico  | 10+ GB (com base de dados)    
+SO – Windows                 | Windows 10+, Server 2016+| Windows Server 2016+      | Windows Server 2016+ (64-bit) | Windows Server 2016+ (64-bit) 
+SO – Linux                   | Linux x86-64 ou ARM      | x86-64 moderno com RAID   | Linux moderno                 | Linux moderno x86-64/ARM      
+SO – macOS (se aplicável)    | macOS 10+ (Workbench)    | macOS para ambiente dev   | macOS 10.14+ suportado        | macOS 10.14+ (uso leve/dev)   
+
+Fontes:
+- https://dev.mysql.com/doc/mysql-monitor/8.0/en/system-prereqs-reference.html
+- https://www.postgresql.org/docs/current/supported-platforms.html
+- https://documentation.commvault.com/2024e/expert/mysql_system_requirements.html
+- https://www.w3schools.com/postgresql/postgresql_install.php

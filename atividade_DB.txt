@@ -1,0 +1,326 @@
+1. Conceitue dado, informação e conhecimento demonstrando a relação de transformação entre eles. Use um
+mesmo exemplo para ilustrar cada etapa.
+
+R:
+
+1- Dados
+Definição: Dado é um elemento bruto, isolado, sem contexto ou interpretação. Por si só, não tem significado útil.
+
+Exemplo: Número 3
+Neste caso, o número "3" sozinho é apenas um dado, não sabemos o que ele representa. Pode ser uma temperatura, uma idade, uma quantidade, etc.
+
+2- Informação
+Definição:
+Informação é o dado processado e contextualizado. Ao dar significado ao dado, ele se torna compreensível e útil.
+
+Exemplo: "A temperatura registrada hoje na cidade foi de 8°C.
+Aqui, o dado "8" foi contextualizado (é uma temperatura, relacionada a um lugar e a um tempo). Agora sim ele tem sentido, virou informação.
+
+3- Conhecimento
+Definição: Conhecimento é o uso da informação, com base na experiência, análise ou compreensão, para tomar decisões, gerar insights ou realizar ações.
+
+Exemplo: "Temperaturas acima de 30°C aumenta o risco de desidratação. Como hoje a temperatura é de 30°C, devo evitar exposição prolongada ao sol e me manter hidratado.
+Agora, a informação sobre a temperatura foi interpretada com base em experiências ou aprendizados prévios permitindo a tomada de decisão . Isso é conhecimento.
+
+etapas:
+Dado → Informação → Conhecimento
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Diferencie “dado” e “informação” do ponto de vista de contexto e interpretação, indicando por que um
+mesmo valor numérico pode ser classificado de formas distintas.
+
+Exemplo: Número 30
+
+Dado = Recebo apenas o número 30, sem contexto.
+Por quê: Não sabe se é uma velocidade, uma nota, uma temperatura etc.
+
+Informação = "A velocidade registrada no radar foi de 30 km/h.
+Por quê: O número ganhou significado e contexto: agora sei que se refere á velocidade.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+3. Explique como o conhecimento agrega valor à tomada de decisões empresariais. Cite duas situações
+práticas em que essa etapa é indispensável.
+
+R:
+
+Ele agrega em:
+Transforma dados e informações em decisões eficazes.
+
+Reduz incertezas, pois é baseado em análise e experiências anteriores.
+
+Melhora a competitividade, identificando oportunidades e prevenindo riscos.
+
+Agiliza processos, evitando retrabalho e decisões mal-informadas.
+
+Situações práticas:
+
+1- Gestão de Estoque em um Supermercado:
+
+Cenário: O sistema mostra que o produto "leite integral" vendeu 500 unidades no último final de semana.
+
+Conhecimento aplicado: O gerente, com base em anos anteriores e previsão de clima quente (alta demanda por leite), decide aumentar o pedido para 800 unidades para evitar ruptura de estoque.
+
+Resultado: Decisão proativa evita perda de vendas e melhora o atendimento ao cliente.
+
+2- Estratégia de Marketing Digital
+Cenário: A equipe de marketing tem acesso a dados de cliques, curtidas e conversões de campanhas anteriores.
+
+Conhecimento aplicado: Com base na análise de padrões de comportamento do público, a equipe escolhe o melhor horário, canal e tipo de conteúdo para a nova campanha.
+
+Resultado: A campanha tem melhor engajamento e maior retorno sobre o investimento (ROI).
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Compare as funções de um Banco de Dados e de um SGBD. Descreva pelo menos três responsabilidades
+exclusivas do SGBD que o banco, por si só, não executa.
+
+Banco de Dados (BD)
+Sistema de Gerenciamento de Banco de Dados (SGBD)
+
+BD: É o conjunto organizado de dados armazenados de forma estruturada.
+SGBD: É o software que permite criar, gerenciar, consultar e manipular o banco de dados.
+
+BD: Armazena os dados em arquivos físicos ou digitais.	
+SGBD: Controla o acesso aos dados, garante segurança e integridade.
+
+BD: Não possui inteligência ou lógica por si só.	
+SGBD: É responsável pela execução de comandos e pela administração do banco.
+
+Três responsabilidades exclusivas do SGBD:
+
+1- Controle de Acesso e Segurança:
+O SGBD gerencia quem pode acessar quais dados, com permissões de leitura, escrita ou administração.
+Exemplo: Um funcionário pode visualizar os dados de vendas, mas não alterá-los.
+
+2- Garantia de integridade dos Dados:
+O SGBD assegura que os dados estejam coerentes e válidos, por meio de regras (como chaves primárias, restrições, etc.).
+Exemplo: Impede que seja inserido um cliente sem CPF em uma tabela onde o CPF é obrigatório.
+
+3- Recuperação e Backup:
+O SGBD realiza cópias de segurança automáticas e permite recuperar dados em caso de falhas ou perdas.
+Exemplo: Após uma queda de energia, o SGBD restaura o banco para o último estado consistente.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+5. Discuta a importância dos princípios ACID em ambientes críticos (por exemplo, bancos ou hospitais). Como
+o SGBD garante cada um desses princípios?
+
+A: Atomicidade
+Significado: Tudo ou nada: a transação ocorre por completo ou não ocorre.
+
+C: Consistência
+Significado: A transação leva o banco de um estado válido para outro estado válido.
+
+I: Isolamento
+Significado: Transações simultâneas não interferem entre si.
+
+D: Durabilidade
+Significado: Após a confirmação (commit), os dados persistem, mesmo após falhas.
+
+Exemplo: Banco
+Atomicidade: Uma transferência entre contas deve debitar e creditar ao mesmo tempo. Se uma parte falhar, nenhuma deve ocorrer.
+
+Isolamento: Se dois clientes fizerem saques simultâneos, o saldo deve ser atualizado corretamente, sem interferência entre as operações.
+
+Durabilidade: Após confirmar um depósito, ele não pode desaparecer, mesmo após uma pane elétrica.
+
+Consistência: O total de dinheiro no sistema deve permanecer coerente após cada transação.
+
+Como o SGBD Garante os Princípios ACID?
+
+Atomicidade: Usa mecanismos de log de transações e rollback para desfazer operações incompletas.
+
+Consistência: Aplica regras, restrições e validações (chaves primárias, estrangeiras, tipos de dados, etc.).
+
+Isolamento: Utiliza níveis de isolamento e controle de concorrência (locks, MVCC, etc.).
+
+Durabilidade: Registra alterações em logs persistentes e garante commit mesmo após falhas.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+6. Imagine que uma planilha Excel com milhares de linhas é migrada para um SGBD relacional. Aponte dois
+benefícios técnicos e dois desafios dessa migração.
+
+1- Melhor Organização e Integridade dos Dados
+O SGBD permite a estruturação adequada dos dados em tabelas relacionadas, com uso de chaves primárias e estrangeiras.
+
+Isso evita duplicidades e inconsistências, comuns em planilhas manuais.
+
+2- Maior Eficiência nas Consultas e Análises
+O SGBD usa linguagens como SQL, que possibilitam consultas complexas, filtros e relatórios em segundos, mesmo com grandes volumes de dados.
+
+Diferente do Excel, que pode ficar lento ou travar com milhares de linhas.
+
+Dois Desafios da Migração
+1- Modelagem de Dados
+A planilha geralmente tem uma estrutura não-normalizada (com colunas repetidas ou dados misturados).
+
+É necessário criar um modelo relacional adequado, dividindo os dados em tabelas normalizadas, o que exige conhecimento técnico.
+
+2- Validação e Limpeza dos Dados
+Dados em planilhas podem ter erros, células vazias, tipos de dados incorretos (ex: texto onde deveria ser número).
+
+Antes da migração, é preciso fazer um processo de validação e limpeza, o que pode ser demorado e trabalhoso.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+7. Analise o papel da segurança em um SGBD. Descreva mecanismos típicos (autenticação, autorização,
+criptografia, logs) e explique por que não podem ser implementados apenas no banco de dados “cru”.
+
+Papel da Segurança em um SGBD:
+
+Proteger dados sensíveis (ex: senhas, dados bancários, registros médicos).
+
+Garantir acesso controlado, apenas a usuários autorizados.
+
+Evitar alterações indevidas ou maliciosas nos dados.
+
+Manter histórico de atividades, para auditoria e rastreabilidade.
+
+Mecanismos Típicos de Segurança no SGBD:
+
+1- Autenticação
+Verifica a identidade do usuário antes de conceder acesso ao banco.
+
+Exemplo: login com nome de usuário e senha.
+
+Alguns SGBDs suportam autenticação via LDAP, certificados digitais ou autenticação multifator (MFA).
+
+2- Autorização
+Define o que cada usuário pode ou não fazer dentro do banco de dados.
+
+Exemplo: um funcionário pode consultar dados, mas não alterá-los; outro pode apenas inserir novos registros.
+
+Implementada por meio de perfis, roles e permissões (como GRANT, REVOKE no SQL).
+
+3- Criptografia
+Protege os dados em repouso (armazenados) e em trânsito (durante a comunicação).
+
+Exemplo: criptografia AES no disco e uso de SSL/TLS nas conexões com o banco.
+
+Garante que, mesmo que os dados sejam interceptados, não possam ser lidos sem a chave correta.
+
+4- Logs e Auditoria
+Registra todas as atividades realizadas no banco de dados: acessos, alterações, falhas, etc.
+
+Importante para auditorias, rastreamento de erros ou comportamentos suspeitos.
+
+Exemplo: log de transações (binlog), auditoria de comandos SQL, registros de login/logout.
+
+Por que isso não pode ser feito apenas em um "banco de dados cru"?
+Um banco de dados cru (como uma simples coleção de arquivos, planilhas ou tabelas sem SGBD) não possui inteligência ou controle de segurança embutido. Ele:
+
+Não autentica usuários (qualquer pessoa com acesso ao arquivo pode abrir e ver os dados).
+
+Não restringe permissões (todos podem modificar qualquer parte dos dados).
+
+Não gera logs de ações (não há registro de quem acessou ou alterou o quê).
+
+Não criptografa os dados automaticamente (ficam expostos no disco, podendo ser copiados ou roubados).
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+8. Muitos sistemas adotam dados em tempo real (streams) para tomadas de decisão rápidas. Explique como
+a passagem de “dado” para “informação” ocorre nesse cenário e cite um risco associado à pressa em gerar
+conhecimento.
+
+Como ocorre a passagem de “Dado” para “Informação” em tempo real
+Em sistemas de streaming de dados, os dados são gerados continuamente por sensores, dispositivos ou sistemas e enviados quase instantaneamente a um servidor ou aplicativo.
+
+Etapas da transformação:
+Dado (bruto):
+Exemplo: velocidade = 100 (recebido de um sensor de um veículo).
+
+Informação (contextualizada):
+O sistema interpreta:
+O veículo X está a 100 km/h em uma via urbana onde o limite é 60 km/h.
+Agora o número tem contexto, virou informação útil.
+
+Conhecimento (interpretado):
+O sistema pode, com base em regras anteriores, disparar um alerta automático:
+Alta velocidade detectada. Aplicar penalidade ou alertar o motorista.
+
+Essa transformação precisa ser automática, confiável e rápida, o que é um dos grandes desafios da análise em tempo real.
+
+Risco da pressa em gerar conhecimento
+
+Risco: Decisões precipitadas com base em dados incompletos ou incorretos
+Em cenários em tempo real, a urgência pode levar à interpretação apressada de dados ainda não validados, resultando em conhecimento falho e decisões erradas.
+
+Exemplo prático:
+Um hospital recebe dados de um monitor cardíaco informando batimentos = 190 bpm.
+
+Sem considerar o contexto (exercício, falha no sensor, paciente jovem), o sistema dispara uma emergência falsa, gerando pânico, custo e interrupção de serviços.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+9. Em um projeto de IA, a qualidade dos dados de entrada afeta diretamente o resultado. Descreva três
+práticas de governança de dados que garantam que informações corretas cheguem à fase de geração de
+conhecimento.
+
+Três práticas de governança de dados que garantem informações corretas para a IA:
+1- Qualidade dos Dados (Data Quality Management)
+Objetivo: Garantir que os dados estejam completos, precisos, consistentes, atualizados e sem duplicações.
+
+Como aplicar:
+
+Remover ou corrigir erros de digitação, formatos incorretos, valores fora de faixa.
+
+Padronizar nomes, unidades e categorias.
+
+Validar os dados com regras de negócio e referências confiáveis.
+
+Exemplo: Garantir que a variável "idade" nunca seja negativa ou maior que 120 antes de treinar um modelo preditivo.
+
+2- Catalogação e Linhagem de Dados (Data Catalog & Lineage)
+Objetivo: Rastrear a origem, transformação e destino de cada conjunto de dados utilizado no projeto.
+
+Como aplicar:
+
+Usar ferramentas de data catalog para descrever o conteúdo e a finalidade de cada base.
+
+Mapear o caminho que os dados percorrem desde a fonte até o modelo de IA (data lineage).
+
+Exemplo: Saber que a base usada para prever inadimplência veio do sistema financeiro, passou por filtros e foi anonimizada corretamente.
+
+3- Controle de Acesso e Segurança dos Dados
+Objetivo: Garantir que apenas usuários autorizados possam acessar ou modificar os dados, prevenindo manipulações acidentais ou maliciosas.
+
+Como aplicar:
+
+Definir perfis de acesso (leitura, escrita, análise).
+
+Monitorar o uso com logs e alertas.
+
+Implementar criptografia e anonimização, especialmente com dados sensíveis.
+
+Exemplo: Em um projeto de IA na área da saúde, os dados de pacientes são acessíveis apenas por membros autorizados e estão devidamente anonimizados.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+10. Suponha que você precise convencer uma diretoria a investir em um novo SGBD. Redija um breve
+argumento destacando vantagens estratégicas (escalabilidade, integridade, desempenho) sobre manter
+apenas arquivos ou planilhas convencionais.
+
+Prezada Diretoria,
+
+Manter nossos dados em planilhas e arquivos convencionais limita seriamente nossa capacidade de crescer com segurança, eficiência e inteligência. Ao investir em um Sistema de Gerenciamento de Banco de Dados (SGBD), ganhamos vantagens estratégicas claras:
+
+Escalabilidade:
+Um SGBD suporta grandes volumes de dados com rapidez, permitindo que a empresa cresça sem perder performance, mesmo com múltiplos usuários acessando simultaneamente.
+
+Integridade e Confiabilidade:
+O sistema mantém dados consistentes e íntegros, mesmo com múltiplas atualizações em tempo real — algo impossível de garantir em planilhas que são facilmente corrompidas ou duplicadas.
+
+Desempenho e Agilidade:
+Consultas, relatórios e análises que hoje demoram minutos (ou horas) em planilhas serão executados em segundos, com precisão e segurança, gerando decisões mais rápidas e fundamentadas.
+
+Além disso, um SGBD proporciona segurança de acesso, controle de versões, backup automático e integração com ferramentas analíticas e sistemas externos.
+
+Conclusão:
+Esse investimento não é apenas tecnológico, mas estratégico: fortalece nossa base de dados, reduz riscos operacionais e prepara a empresa para crescer de forma estruturada, moderna e competitiva.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+

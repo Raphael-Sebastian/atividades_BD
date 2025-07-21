@@ -1,0 +1,19 @@
+Análise de Vantagens de um SGBD Relacional no Cenário da Loja Tech Plus
+
+1. Eliminação de redundância e inconsistência de dados
+A duplicação de registos na planilha clientes.xlsx é um problema recorrente, pois diferentes funcionários acabam por registar o mesmo cliente mais de uma vez. Um SGBD relacional elimina essa redundância ao permitir a definição de chaves primárias únicas, garantindo que cada cliente seja inserido apenas uma vez na base de dados. Além disso, a normalização dos dados ajuda a manter a consistência entre os registos.
+
+2. Melhor controlo de acesso e segurança
+As planilhas em rede partilhada não oferecem segurança adequada, o que leva à perda de dados quando múltiplos utilizadores as acedem em simultâneo. Com um SGBD, é possível configurar permissões de acesso por utilizador, controlando quem pode ver, editar ou eliminar informações. Recursos como autenticação de utilizadores e controlo de transações aumentam a segurança e fiabilidade do sistema.
+
+3. Maior integridade e validação dos dados
+Erros de fórmula e referências quebradas na planilha vendas.xlsx resultam em totais incorretos. Um SGBD oferece mecanismos de validação automática, como restrições de tipo de dados, valores obrigatórios (NOT NULL) e regras de integridade referencial, garantindo que os dados inseridos sejam corretos e coerentes com as demais tabelas.
+
+4. Capacidade de realizar consultas complexas e rápidas
+A análise do histórico de um cliente ou o cruzamento entre vendas e produtos é morosa nas planilhas. Com um SGBD, pode-se utilizar SQL (Structured Query Language) para realizar pesquisas complexas e com grande velocidade, integrando informações entre várias tabelas com facilidade, o que melhora a tomada de decisões comerciais.
+
+5. Backup e recuperação automatizados
+Na situação atual, não há qualquer garantia de cópias de segurança das planilhas. Em caso de falha, a perda de dados é crítica. Um SGBD permite configurar backups automáticos e recuperação de dados em caso de falhas ou acidentes, garantindo maior disponibilidade e continuidade do negócio.
+
+6. Relacionamento entre tabelas (modelagem relacional)
+A ausência de ligação entre as planilhas vendas.xlsx e estoque.xlsx leva ao risco de vender produtos esgotados. Num SGBD, as tabelas podem ser relacionadas entre si por meio de chaves estrangeiras (foreign keys), permitindo que cada venda atualize automaticamente o stock disponível, evitando erros e facilitando o controlo de inventário.
